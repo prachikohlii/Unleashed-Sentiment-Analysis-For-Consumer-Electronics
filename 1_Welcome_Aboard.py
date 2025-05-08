@@ -203,7 +203,7 @@ description = f"""
 {badge(1)} **Snapshot** — Concise overview featuring random examples, word clouds and sentiment counts.  
 {badge(2)} **The Deep Dive** — Deep insights into the data providing a detailed analysis. 
 {badge(3)} **Competitive Landscape** — Provides a comparative view of public sentiment across different brands, products,or competitors. 
-{badge(4)} **NLPification** — Perform NLP: instantly receive tokenized, lemmatized, POS, and NER forms of text.   
+{badge(4)} **NLPfication** — Perform NLP: instantly receive tokenized, lemmatized, POS, and NER forms of text.   
 {badge(5)} **Analysis Hub** — Analyze text sentiment in real-time or via CSV upload.
 </div>
 <div style="line-height: 0.3;">
