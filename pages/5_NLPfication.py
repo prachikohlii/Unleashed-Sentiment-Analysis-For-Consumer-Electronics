@@ -2,7 +2,7 @@ import streamlit as st
 import spacy
 from nltk.tokenize import sent_tokenize
 from nltk.tokenize import word_tokenize
-st.set_page_config(page_title='NLPification',page_icon="https://drive.google.com/thumbnail?id=1LhqJDkJF8J8_J7_9VT12-L8Fk4q6htYm",layout="centered")
+st.set_page_config(page_title='NLPfication',page_icon="https://drive.google.com/thumbnail?id=1LhqJDkJF8J8_J7_9VT12-L8Fk4q6htYm",layout="centered")
 st.markdown('***Natural Language Processing On the Go...***')
 
 nlp = spacy.load("en_core_web_sm")
