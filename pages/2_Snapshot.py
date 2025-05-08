@@ -55,7 +55,7 @@ with st.sidebar:
     counts=st.checkbox("**Show Sentiment Label Counts**")
     visualization_type = st.radio(
         "Visualization type",
-        ('Histogram', 'Pie Chart','None'),index=None
+        ('Bar Chart', 'Pie Chart','None'),index=None
     )
     st.markdown("---")
 
@@ -138,13 +138,13 @@ if random:
 if counts:
     st.markdown('***Showing Sentiments counts...***')
     if visualization_type:
-        if visualization_type=='Histogram':
+        if visualization_type=='Bar Chart':
             fig = px.bar(
             df,
             x=df['sentiment_label_textblob'].unique(),
             y=df['sentiment_label_textblob'].value_counts(),
             color=df['sentiment_label_textblob'].unique(),  # color bars based on sentiment categories
-            color_discrete_sequence=['#388E3C','#D32F2F','#81C784','#BDBDBD','#F57C00'],
+            color_discrete_sequence=['#388E3C','#81C784','#BDBDBD','#F57C00','#D32F2F'],
             title='Sentiment Distribution',
             labels={'x': 'Sentiment Category', 'y': 'Frequency'},
             text=df['sentiment_label_textblob'].value_counts()  # Show the count on top of each bar
@@ -165,7 +165,7 @@ if counts:
                 
         elif visualization_type=='Pie Chart':
             fig=px.pie(df, names=df['sentiment_label_textblob'].unique(),values=df['sentiment_label_textblob'].value_counts(),
-                       color_discrete_sequence=['#388E3C','#D32F2F','#81C784','#BDBDBD','#F57C00'],title='Sentiment Distribution',hole=0.3)
+                       color_discrete_sequence=['#388E3C','#81C784','#BDBDBD','#F57C00','#D32F2F'],title='Sentiment Distribution',hole=0.3)
             fig.update_traces(
                 textinfo='label+percent+value')
             with st.container(border=True):
