@@ -53,8 +53,8 @@ Unleashed is a Streamlit-powered web app that performs **in-depth sentiment anal
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/unleashed-sentiment-analysis.git
-cd unleashed-sentiment-analysis
+git clone https://github.com/prachikohlii/Unleashed-Sentiment-Analysis-For-Consumer-Electronics.git
+cd Unleashed-Sentiment-Analysis-For-Consumer-Electronics
 
 # Install dependencies
 pip install -r requirements.txt
