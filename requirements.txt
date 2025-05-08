@@ -1,0 +1,10 @@
+plotly.express
+numpy
+pandas
+streamlit 
+nltk
+spacy
+textblob
+seaborn
+matplotlib
+wordcloud
