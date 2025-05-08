@@ -60,4 +60,4 @@ cd Unleashed-Sentiment-Analysis-For-Consumer-Electronics
 pip install -r requirements.txt
 
 # Run the app
-streamlit run app.py
+streamlit run 1_Welcome_Aboard.py
