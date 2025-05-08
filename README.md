@@ -7,6 +7,7 @@ Detailed sentiment analysis
 Competitor comparison
 NLP-powered review insights
 Interactive visualizations
+/assets
 
 //Tech stack
 Python, Streamlit, spaCy, numpy, pandas, textblob, nltk, wordCloud, matplotlib, seaborn, plotly.express
