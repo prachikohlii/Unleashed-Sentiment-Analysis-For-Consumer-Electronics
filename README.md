@@ -25,9 +25,9 @@ Unleashed is a Streamlit-powered web app that performs **in-depth sentiment anal
 
 ## 📷 Screenshots
 
-| Dashboard | Product Comparison |
-|-----------|--------------------|
-| ![Screenshot1](assets/screenshot1.png) | ![Screenshot2](assets/screenshot2.png) |
+| Overview | Detailed Analysis | Competitive Analysis | NLP Operations | Analyze Text |
+|-----------|--------------------|---------------------|---------------=|------------|
+| ![Screenshot1](assets/screenshot1.png) | ![Screenshot2](assets/screenshot2.png) | ![Screenshot2](assets/screenshot2.png) | ![Screenshot2](assets/screenshot2.png) | ![Screenshot2](assets/screenshot2.png) |
 
 ---
 
