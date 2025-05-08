@@ -25,7 +25,10 @@ Unleashed is a Streamlit-powered web app that performs **in-depth sentiment anal
 
 ---
 ##💫 Get Started - Welcome Aboard!
+
 ![Demo GIF](assets/Animation.gif)
+
+
 ---
 ## 📷 Screenshots
 
