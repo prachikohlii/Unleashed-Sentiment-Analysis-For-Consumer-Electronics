@@ -17,7 +17,7 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
     st.markdown("## **Sentiment Analysis For Consumer Electronics**")
-    st.markdown("NLPification",help='NLP Operations: instantly receive tokenized, lemmatized, POS, and NER forms of text')
+    st.markdown("NLPfication",help='NLP Operations: instantly receive tokenized, lemmatized, POS, and NER forms of text')
     st.markdown("---")
 
 st.markdown(
