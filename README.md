@@ -8,7 +8,7 @@ Unleashed is a Streamlit-powered web app that performs **in-depth sentiment anal
 ---
 
 ## ✨ Features
-- 📊 **Overview - Snapshot**  
+- ⭕ **Overview - Snapshot**  
   Concise overview featuring random examples, word clouds and sentiment counts
 
 - 📊 **Detailed Sentiment Analysis - The Deep Dive**  
