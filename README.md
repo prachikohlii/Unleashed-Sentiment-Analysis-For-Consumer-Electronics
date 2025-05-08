@@ -8,18 +8,20 @@ Unleashed is a Streamlit-powered web app that performs **in-depth sentiment anal
 ---
 
 ## ✨ Features
+- 📊 **Overview - Snapshot**  
+  Concise overview featuring random examples, word clouds and sentiment counts
 
-- 📊 **Detailed Sentiment Analysis**  
-  Breaks down customer reviews into positive, negative, and neutral components.
+- 📊 **Detailed Sentiment Analysis - The Deep Dive**  
+  Deep insights into the data providing a detailed analysis.
 
-- 🆚 **Competitor Comparison**  
+- 🆚 **Competitor Comparison - Competitive Landscape**  
   Compare product sentiment across competing brands in real time.
 
-- 🧠 **NLP-Powered Insights**  
-  Extracts themes, emotion, and customer pain points using spaCy.
+- 🧠 **NLP Operations - NLPfication**  
+  Instantly receive tokenized, lemmatized, POS, and NER forms of text.
 
-- 📈 **Interactive Visualizations**  
-  Beautiful charts to explore opinion trends and performance over time.
+- 📈 **Analyze Text - Analysis Hub**  
+  Analyze text sentiment in real-time or via CSV upload
 
 ---
 
