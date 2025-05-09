@@ -56,7 +56,7 @@ Unleashed is a Streamlit-powered web app that performs **in-depth sentiment anal
 ---
 
 ## 🛠️ Installation
-<p> Run the following commands one by one in your Terminal </p>
+Run the following commands one by one in your Terminal 
 ```bash
 # Clone the repo
 git clone https://github.com/prachikohlii/Unleashed-Sentiment-Analysis-For-Consumer-Electronics.git
@@ -72,7 +72,7 @@ streamlit run 1_Welcome_Aboard.py
 
 ## 🧠 Model Info
 
-- We use en_core_web_sm for NLP tasks. If needed, download it manually:  
+We use en_core_web_sm for NLP tasks. If needed, download it manually:  
 ```bash
 python -m spacy download en_core_web_sm
 ```
