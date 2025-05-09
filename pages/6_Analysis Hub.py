@@ -8,6 +8,7 @@ import io
 import nltk
 
 nltk.download('stopwords')
+nltk.download('wordnet')
 st.set_page_config(page_title='Analysis Hub',page_icon="https://drive.google.com/thumbnail?id=1LhqJDkJF8J8_J7_9VT12-L8Fk4q6htYm",layout="centered")
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
