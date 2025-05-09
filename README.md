@@ -97,7 +97,7 @@ textblob
 ---
 
 ## 📂 Dataset 
-| ![View Sample Dataset](assets/dataset.png) |
+![View Sample Dataset](assets/dataset.png)
 
 ---
 
