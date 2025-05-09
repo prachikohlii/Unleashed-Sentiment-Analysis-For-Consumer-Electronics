@@ -65,6 +65,7 @@ cd Unleashed-Sentiment-Analysis-For-Consumer-Electronics
 # Install dependencies
 pip install -r requirements.txt
 pip install -r stopwords.txt
+
 # Run the app
 streamlit run 1_Welcome_Aboard.py
 ```
@@ -96,7 +97,7 @@ textblob
 ---
 
 ## 📂 Dataset 
-| ![View Sample Dataset](dataset.png) |
+| ![View Sample Dataset](assets/dataset.png) |
 
 ---
 
@@ -109,4 +110,5 @@ Pull requests and feedback are welcome! For major changes, open an issue first t
 📧 Reach out on [LinkedIn](https://www.linkedin.com/in/prachikohli00/) or drop a ⭐ if you like the project!
 
 ---
-## PPT
+## 💻 Presentation
+![View Project PPT]()
