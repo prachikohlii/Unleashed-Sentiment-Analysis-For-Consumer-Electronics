@@ -62,10 +62,6 @@ Run the following commands one by one in your Terminal
 git clone https://github.com/prachikohlii/Unleashed-Sentiment-Analysis-For-Consumer-Electronics.git
 cd Unleashed-Sentiment-Analysis-For-Consumer-Electronics
 
-# Install dependencies
-pip install -r requirements.txt
-pip install -r stopwords.txt
-
 # Run the app
 streamlit run 1_Welcome_Aboard.py
 ```
@@ -111,4 +107,4 @@ Pull requests and feedback are welcome! For major changes, open an issue first t
 
 ---
 ## 💻 Presentation
-![View Project PPT]()
+Check out [Project PPT](unleashed.pptx) for more info.
