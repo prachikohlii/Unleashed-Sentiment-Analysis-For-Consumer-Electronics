@@ -64,7 +64,7 @@ cd Unleashed-Sentiment-Analysis-For-Consumer-Electronics
 
 # Install dependencies
 pip install -r requirements.txt
-
+pip install -r stopwords.txt
 # Run the app
 streamlit run 1_Welcome_Aboard.py
 ```
@@ -94,8 +94,8 @@ matplotlib>=3.7
 ```
 ---
 
-## Dataset
-📂 [View sample dataset](main.csv)
+## 📂 Dataset 
+| (dataset.png) |
 
 ---
 
