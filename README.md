@@ -61,13 +61,14 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run 1_Welcome_Aboard.py
+```
 ---
 
 ## 🧠 Model Info
 # We use en_core_web_sm for NLP tasks. If needed, download it manually:
 ```bash
 python -m spacy download en_core_web_sm
-
+```
 ---
 
 ## 📦 Requirements
@@ -78,6 +79,7 @@ numpy>=1.24
 pandas>=2.0
 matplotlib>=3.7
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+```
 ---
 ## 🤝 Contributing
 Pull requests and feedback are welcome! For major changes, open an issue first to discuss what you’d like to change.
