@@ -65,7 +65,7 @@ streamlit run 1_Welcome_Aboard.py
 ---
 
 ## 🧠 Model Info
-# We use en_core_web_sm for NLP tasks. If needed, download it manually:
+#### We use en_core_web_sm for NLP tasks. If needed, download it manually:
 ```bash
 python -m spacy download en_core_web_sm
 ```
