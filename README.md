@@ -80,22 +80,23 @@ python -m spacy download en_core_web_sm
 
 ## 📦 Requirements
 ```txt
-plotly.express
-nltk
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-textblob
-seaborn
-wordcloud
 streamlit>=1.32
-spacy>=3.7.2
 numpy>=1.24,<2.0
 pandas>=2.0
 matplotlib>=3.7
+seaborn
+plotly
+plotly.express
+wordcloud
+nltk
+spacy>=3.7.2
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+textblob
 ```
 ---
 
 ## 📂 Dataset 
-| (dataset.png) |
+| ![View Sample Dataset](dataset.png) |
 
 ---
 
