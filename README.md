@@ -44,13 +44,19 @@ Unleashed is a Streamlit-powered web app that performs **in-depth sentiment anal
 - [Streamlit](https://streamlit.io/)
 - [spaCy](https://spacy.io/)
 - [pandas](https://pandas.pydata.org/)
-- [scikit-learn](https://scikit-learn.org/)
 - [NumPy](https://numpy.org/)
+- [plotly](https://plotly.com/)
+- [Plotly Express](https://plotly.com/python/plotly-express/)
+- [WordCloud](https://amueller.github.io/word_cloud/)
+- [matplotlib](https://matplotlib.org/)
+- [seaborn](https://seaborn.pydata.org/)
+- [NLTK](https://www.nltk.org/)
+- [TextBlob](https://textblob.readthedocs.io/en/dev/)
 
 ---
 
 ## 🛠️ Installation
-### Run the following commands one by one in your Terminal
+<p> Run the following commands one by one in your Terminal </p>
 ```bash
 # Clone the repo
 git clone https://github.com/prachikohlii/Unleashed-Sentiment-Analysis-For-Consumer-Electronics.git
@@ -65,7 +71,8 @@ streamlit run 1_Welcome_Aboard.py
 ---
 
 ## 🧠 Model Info
-#### We use en_core_web_sm for NLP tasks. If needed, download it manually:
+
+- We use en_core_web_sm for NLP tasks. If needed, download it manually:  
 ```bash
 python -m spacy download en_core_web_sm
 ```
@@ -73,14 +80,25 @@ python -m spacy download en_core_web_sm
 
 ## 📦 Requirements
 ```txt
+plotly.express
+nltk
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+textblob
+seaborn
+wordcloud
 streamlit>=1.32
 spacy>=3.7.2
-numpy>=1.24
+numpy>=1.24,<2.0
 pandas>=2.0
 matplotlib>=3.7
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 ```
 ---
+
+## Dataset
+📂 [View sample dataset](main.csv)
+
+---
+
 ## 🤝 Contributing
 Pull requests and feedback are welcome! For major changes, open an issue first to discuss what you’d like to change.
 
@@ -88,3 +106,6 @@ Pull requests and feedback are welcome! For major changes, open an issue first t
 
 ## 🔗 Connect
 📧 Reach out on [LinkedIn](https://www.linkedin.com/in/prachikohli00/) or drop a ⭐ if you like the project!
+
+---
+## PPT
