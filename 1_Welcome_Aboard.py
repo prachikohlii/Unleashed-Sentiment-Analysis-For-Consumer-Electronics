@@ -113,7 +113,7 @@ st.markdown("""
     }
 
     .stButton > button:active {
-        background-color: rgb(96, 29, 252);
+        background-color: rgb(129, 78, 252);
         transform: scale(0.98);
     }
     </style>
@@ -156,10 +156,11 @@ st.markdown('''This project delves into the vast landscape of customer reviews f
 aiming to uncover the underlying opinions and emotions expressed by users.''',unsafe_allow_html=True)
 
 
+# Inject CSS
 st.markdown("""
     <style>
     .intro-box {
-        background:linear-gradient(135deg, #fdfbfb, #ebedee);
+        background: linear-gradient(135deg, #fdfbfb, #ebedee);
         border-left: 5px solid rgb(129, 78, 252);
         padding: 1.5rem;
         border-radius: 12px;
@@ -169,48 +170,74 @@ st.markdown("""
         box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
         white-space: pre-wrap;
     }
-    .intro-title {
-        font-size: 1.3rem;
+
+    .badge {
+        background-color: #814EFC;
+        color: white;
+        padding: 2px 8px;
+        border-radius: 8px;
         font-weight: bold;
-        color: #0077b6;
-        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        margin-right: 6px;
+        display: inline-block;
     }
+
+    .offer-block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        margin-top:0;
+    }
+
+    .offer-title {
+        white-space: nowrap;
+        display: inline-block;
+        margin-right: 6px;  
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .intro-box {
+            padding: 1rem;
+            font-size: 0.95rem;
+        }
+    }
+
     .stProgress > div > div > div > div {
-        background-color:rgb(129, 78, 252) ;
+        background-color: rgb(129, 78, 252);
     }
     </style>
 """, unsafe_allow_html=True)
 
+# Badge generator
 def badge(number):
-    return f"""<span style="background-color:#814EFC; color:white; padding:2px 8px; border-radius:8px; font-weight:bold; font-size:0.9rem;">{number}</span>"""
-# --- Description text to animate ---
+    return f"""<span class="badge">{number}</span>"""
+
+# Animated description
 description = f"""
+<b>What is Sentiment Analysis?</b>  
+Sentiment analysis, also known as opinion mining, is a natural language processing (NLP) technique used to determine the emotional tone expressed in a piece of text.
 
-<b>What is Sentiment Analysis? 
- Sentiment analysis, also known as opinion mining, is a natural language processing (NLP) technique used to determine the emotional tone expressed in a piece of text.
 
-<div style="line-height: 0.4;"> 
-**Why is Sentiment Analysis for Consumer Electronics important?**
-▪️Understand Customer Feedback
-▪️Monitor Brand Reputation
-▪️Improve Products and Services
-▪️Enhance Customer Service
-▪️Gain Competitive Intelligence
-</div>
+<b>Why is Sentiment Analysis for Consumer Electronics important?</b>
+<li style="margin:0px; line-height: 0.4;">Understand Customer Feedback</li>
+<li style="margin:0px ; line-height: 0.4;">Monitor Brand Reputation</li>
+<li style="margin:0px ; line-height: 0.4;">Improve Products and Services</li>
+<li style="margin:0px ; line-height: 0.4;">Enhance Customer Service</li>
+<li style="margin:0px ; line-height: 0.4;">Gain Competitive Intelligence</li>
 
-<div style="line-height: 0.6;">
-**Unleashed Offers:**
-{badge(1)} **Snapshot** — Concise overview featuring random examples, word clouds and sentiment counts.  
-{badge(2)} **The Deep Dive** — Deep insights into the data providing a detailed analysis. 
-{badge(3)} **Competitive Landscape** — Provides a comparative view of public sentiment across different brands, products,or competitors. 
-{badge(4)} **NLPfication** — Perform NLP: instantly receive tokenized, lemmatized, POS, and NER forms of text.   
-{badge(5)} **Analysis Hub** — Analyze text sentiment in real-time or via CSV upload.
-</div>
-<div style="line-height: 0.3;">
+<br>
+<h3><b>Unleashed Offers:</b> </h3> 
+<div class="offer-block">{badge(1)}<span class="offer-title">Snapshot</span> — Concise overview featuring random examples, word clouds and sentiment counts.</div>
+<div class="offer-block">{badge(2)}<span class="offer-title">The Deep Dive</span> — Deep insights into the data providing a detailed analysis.</div>
+<div class="offer-block">{badge(3)}<span class="offer-title">Competitive Landscape</span> — Provides a comparative view of public sentiment across different brands, products, or competitors.</div>
+<div class="offer-block">{badge(4)}<span class="offer-title">NLPfication</span> — Perform NLP: instantly receive tokenized, lemmatized, POS, and NER forms of text.</div>
+<div class="offer-block">{badge(5)}<span class="offer-title">Analysis Hub</span> — Analyze text sentiment in real-time or via CSV upload.</div>
+
 Ideal for students, researchers, or businesses curious about public opinion towards consumer electronics.
 """
 
-# --- Generator function to yield animated text ---
+# Text streamer
 def stream_description(text, delay=0.03):
     lines = text.strip().splitlines()
     output = ""
@@ -232,7 +259,7 @@ def stream_description(text, delay=0.03):
         line_count += 1
         yield output, line_count, total_lines
 
-# --- Main interaction ---
+# Run animation
 if st.button("Get Started"):
     placeholder = st.empty()
     progress_bar = st.progress(0)
@@ -243,7 +270,6 @@ if st.button("Get Started"):
         progress_bar.progress(progress)
 
     time.sleep(0.3)
-
 
 st.markdown('</div>', unsafe_allow_html=True)
 
